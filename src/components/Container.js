@@ -14,7 +14,10 @@ class Container extends Component {
   render() {
     return(
       <div>
-        <Nav currentPage = {this.state.currentPage} />
+        <Nav 
+          currentPage = {this.state.currentPage}
+          handlePageChange = {this.handlePageChange}
+        />
       </div>
     );
   }
