@@ -1,19 +1,20 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const Navpills = props =>
+const Nav = props =>
   <ul className="nav nav-tabs">
     <li onClick={() => props.handlePageChange("Home")}>
-      <a>Home</a>
+      <Link to="/">Home</Link>
     </li>
     <li onClick={() => props.handlePageChange("About")}>
-      <a>About</a>
+      <Link to="/about">About</Link>
     </li>
-    <li onClick={() => props.handlePageChange("Blog")}>
-      <a>Blog</a>
+    <li onClick={() => props.handlePageChange("Discover")}>
+      <Link to="/discover">Discover</Link>
     </li>
-    <li onClick={() => props.handlePageChange("Contact")}>
-      <a>Contact</a>
+    <li onClick={() => props.handlePageChange("Search")}>
+      <Link to="/search">Search</Link>
     </li>
   </ul>;
 
-export default Navpills;
+export default Nav;
